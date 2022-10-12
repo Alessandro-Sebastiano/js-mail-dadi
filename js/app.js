@@ -11,7 +11,16 @@ let userEmail;
 
 
 btn.addEventListener('click', () => {
-    userEmail = inputs[0].value;
+    let error = document.querySelector('span');
+
+    if (inputs[0].value == '') {
+        console.log(inputs[0].value);
+        error.innerHTML = 'Inserire un e-mail!';
+        return;
+    } else {
+        userEmail = inputs[0].value;
+        error.innerHTML = '';
+    }
 
     for (let i = 0; i < trustEmail.length; i++) {
 
