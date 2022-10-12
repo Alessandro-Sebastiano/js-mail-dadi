@@ -21,7 +21,7 @@ btn.addEventListener('click', () => {
 
             text.innerHTML = 'Email presente in lista';
 
-            console.log('ok');
+            //console.log('ok');
 
             break;
 
@@ -29,12 +29,14 @@ btn.addEventListener('click', () => {
 
             text.innerHTML = 'Email non presente in lista';
 
-            console.log('no');
+            //console.log('no');
 
         }
 
     }
 
+
+    inputs[0].value = '';
 
 
 });
