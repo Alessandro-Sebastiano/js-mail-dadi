@@ -35,6 +35,8 @@ btn.addEventListener('click', () => {
         result.innerHTML = 'Hai perso';
     }
 
+    players = [];
+
 
 })
 
